@@ -1,0 +1,111 @@
+/*****************************
+* Layout - Offcanvas
+*****************************/
+.offcanvas {
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  height: 100%;
+  padding: 20px;
+  transition: $transition-base;
+  transform: translateX(100%);
+  box-shadow: none;
+  background: #f7f7f7;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.offcanvas-leftside {
+  left: 0%;
+  transform: translateX(-100%);
+}
+
+.offcanvas-rightside {
+  right: 0%;
+  transform: translateX(100%);
+}
+
+.offcanvas.offcanvas-open {
+  transform: translateX(0);
+}
+
+.offcanvas-overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-color: rgba($color-black, 0.5);
+}
+
+.offcanvas-header {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offcanvas-close {
+  transition: $transition-base;
+  border: none;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: (0px 0px 6px rgba(0, 0, 0, 0.05));
+
+  //   &::before,
+  //   &::after {
+  //     position: absolute;
+  //     content: "";
+  //     width: 20px;
+  //     height: 2px;
+  //     background: $color-body;
+  //     right: 0;
+  //   }
+
+  //   &:hover::before,
+  //   &:hover::after {
+  //     background: $color-radical-red;
+  //   }
+
+  //   &::before {
+  //     transform: rotate(45deg);
+  //   }
+  //   &::after {
+  //     transform: rotate(-45deg);
+  //   }
+}
+
+.offcanvas-title {
+  margin-bottom: 40px;
+}
+
+.offcanvas-modify {
+  position: relative;
+  align-items: center;
+  span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.filter-back-btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@import "offcanvas/offcanvas-menu";
+// @import "offcanvas/offcanvas-addcart";
+// @import "offcanvas/offcanvas-wishlist";
+// @import "offcanvas/search-box";

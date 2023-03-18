@@ -1,0 +1,101 @@
+.login-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.login-wrapper {
+  .devide-text {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .btn {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .icon {
+      width: 30px;
+      border-right: 1px solid $color-white;
+      margin-right: 30px;
+      display: inline-block;
+    }
+
+    &:hover{
+      .icon {
+      border-color: $color-body;
+      }
+    }
+  }
+}
+
+.default-form-wrapper {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.default-form-list {
+  .single-form-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.single-form-item {
+  position: relative;
+  input {
+    border: 2px solid #e2e7ea;
+    border-radius: 10px;
+    padding: 18px 20px 18px 80px;
+    width: -webkit-fill-available;
+    font-size: 14px;
+    width: 100%;
+    &::placeholder {
+      color: $color-body;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    height: calc(100% - 20px);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    font-size: 16px;
+    border-right: 2px solid #e2e7ea;
+  }
+}
+
+.forgot-link {
+  margin-top: 25px;
+  display: block;
+  text-align: end;
+  margin-bottom: 30px;
+}
+
+.create-account-text {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.sign-account-text {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.page-progress-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-btn {
+  margin-top: 15px;
+}
+
+.register-space-top{
+  margin-top: 15px;
+}

@@ -1,0 +1,328 @@
+.product-wrapper-content {
+  &--4 {
+    overflow: hidden;
+
+    .product-item--style-4:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.product-item {
+  &--style-1 {
+    border-radius: 8px;
+    padding: 20px 10px;
+    @include breakpoint(small) {
+      padding: 20px 20px;
+    }
+    .image {
+      display: block;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 20px;
+      font-size: 16px;
+      &--right {
+        .btn {
+          background: rgba($color-white, 0.3);
+          &:hover {
+            color: $color-radical-red;
+          }
+        }
+      }
+    }
+
+    .price {
+      display: block;
+      font-weight: 900;
+    }
+  }
+
+  &--style-2 {
+    border-radius: 8px;
+
+    .image {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      width: calc(100% - 20px);
+      margin: 0 auto;
+      border-radius: 5px;
+      overflow: hidden;
+      z-index: 1;
+
+      .btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: rgba($color-white, 0.3);
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: -20px;
+      background: $color-white;
+      padding: 40px 10px 15px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      box-shadow: 0 0 6px rgba(#5d68ff, 0.16);
+
+      .price {
+        display: block;
+        font-weight: 900;
+      }
+
+      .review-star-text {
+        font-weight: 500;
+        i {
+          color: #ff9f0a;
+        }
+      }
+    }
+  }
+
+  &--style-3 {
+    border-radius: 8px;
+    background: $color-white;
+    padding: 20px 25px;
+    .image {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+
+      .btn {
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        background: rgba($color-white, 0.3);
+        border: 1px solid #e8e8e8;
+        background: $color-white;
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 30px;
+      border-radius: 5px;
+      font-size: 16px;
+
+      .price {
+        display: block;
+        font-weight: 900;
+      }
+    }
+  }
+
+  &--style-4 {
+    border-radius: 8px;
+    background: $color-white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    transition: all 0.5s ease;
+    .image {
+      width: 90px;
+      height: 90px;
+      background: rgba($color-maya-blue, 0.3);
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: calc(100% - 115px);
+      font-size: 16px;
+
+      .price {
+        display: block;
+        font-weight: 900;
+      }
+
+      .btn {
+        box-shadow: 0 0 6px rgba($color-black, 0.16);
+        &:hover {
+          color: $color-radical-red;
+        }
+      }
+    }
+
+    .cart-link {
+      position: absolute;
+      width: 65px;
+      height: 100%;
+      background: rgba($color-maya-blue, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      right: calc(0% - 75px);
+      color: $color-dodger-blue;
+      font-size: 22px;
+    }
+
+    &.active {
+      transform: translateX(-75px);
+    }
+  }
+
+  &--bg-lime-green {
+    background: rgba($color-lime-green, 0.18);
+  }
+  &--bg-maya-blue {
+    background: rgba($color-maya-blue, 0.18);
+  }
+  &--bg-gold {
+    background: rgba($color-gold, 0.18);
+  }
+  &--bg-red-orange {
+    background: rgba($color-red-orange, 0.18);
+  }
+  &--bg-neon-carrot {
+    background: #f8e3d0;
+  }
+  &--bg-blue-violet {
+    background: #dccff2;
+  }
+  &--bg-colonial-white {
+    background: #f3efe4;
+  }
+  &--bg-solid-pink {
+    background: #dfd5d6;
+  }
+  &--bg-roti {
+    background: #ece5d3;
+  }
+  &--bg-prelude {
+    background: #edeaee;
+  }
+}
+.short-btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 14px;
+  color: #8e8e93;
+  cursor: pointer;
+  &:hover {
+    color: $color-radical-red;
+  }
+  span {
+    display: block;
+    margin-left: 10px;
+  }
+}
+.short-section {
+  display: none;
+}
+.short-wrapper {
+  background: $color-white;
+  box-shadow: 0 -11px 16px rgba(#5d68ff, 0.16);
+  border-radius: 30px 30px 0 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 999;
+  padding: 30px 0px 60px 0px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  @include breakpoint(small) {
+    max-width: 540px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 900;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.short-select-list {
+  font-size: 16px;
+  padding: 0 20px;
+  .list-item {
+    padding: 20px 65px;
+    border-bottom: 1px solid #ececec;
+
+    &:not(:last-child) {
+    }
+  }
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    // position: relative;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    cursor: pointer;
+  }
+
+  .sort-radio-btn {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      border: 3px solid #dedede;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+  }
+
+  input[type="radio"]:checked + .sort-radio-btn::after {
+    border-color: $color-dodger-blue;
+  }
+}
+
+.short-btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  .btn {
+    font-size: 18px;
+    padding: 18px 42.5px;
+    border-radius: 30px;
+
+    &-cancel {
+      color: $color-black;
+      background: rgba($color-maya-blue, 0.3);
+    }
+    &-apply {
+      color: $color-white;
+      background: rgba($color-maya-blue, 1);
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.search-n-filter-section {
+}
+
+.search-n-filter-area {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  position: relative;
+}
+
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  input {
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 6px rgba($color-black, 0.05);
+    padding: 10px 50px 10px 20px;
+  }
+
+  .btn {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    padding: 5px;
+    color: #aaaaaa;
+  }
+  .filter_btn {
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+  }
+}
+// search bar css new
+
+.searchable {
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  flex-grow: 1;
+  flex: 1;
+}
+
+.home-one {
+  .searchable {
+    margin-left: 0px;
+  }
+}
+.searchable ul {
+  padding: 15px 0px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 33;
+  width: 100%;
+  text-transform: capitalize;
+  display: none;
+  list-style-type: none;
+  background-color: #fff;
+  margin: 15px 0px 0px;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 4px;
+}
+
+.searchable ul li {
+  text-transform: capitalize;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.searchable ul li:last-child {
+  margin-bottom: 0;
+}
+.searchable ul li.selected {
+  text-transform: capitalize;
+  background-color: #ff375f;
+  color: #fff;
+}
+
+.submit__btn,
+.close__btn {
+  display: none;
+}
+
+.btn.close__btn {
+  right: 40px;
+}
+
+.shop-filter-block__brand {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0px;
+    }
+    button {
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      color: #171717;
+      border: 0;
+    }
+  }
+}
+
+.shop-filter-block {
+  margin-top: 25px;
+}
+
+.irs--round .irs-from,
+.irs--round .irs-to,
+.irs--round .irs-single {
+  background-color: #ff375f;
+}
+
+.irs--round .irs-from::before,
+.irs--round .irs-to::before,
+.irs--round .irs-single::before {
+  border-top-color: #ff3860;
+}
+
+.irs--round .irs-handle {
+  border: 4px solid #ff3860;
+  box-shadow: 0 1px 3px rgba(255, 56, 96, 0.3);
+}
+.irs--round .irs-bar {
+  background-color: #ff3860;
+}
+
+#shop-filter-menu {
+  margin-top: 25px;
+  box-shadow: 0px 0px 6px rgba(0, 128, 255, 0.1);
+  background: #fff;
+  padding: 25px 15px 25px;
+  border-radius: 10px;
+}
+
+.mt-0 {
+  margin-top: 0px !important;
+}
+
+.shop-filter {
+  display: none;
+}

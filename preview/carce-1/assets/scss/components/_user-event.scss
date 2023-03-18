@@ -1,0 +1,98 @@
+.user-event-section {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.user-event-area {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  margin: 0 auto;
+  @include breakpoint(small) {
+    max-width: 540px;
+  }
+  .user-event {
+    background-color: $color-white;
+    height: 100%;
+    display: flex;
+    &--left,
+    &--right {
+      width: calc(50% - 38px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 45px;
+      font-size: 22px;
+    }
+
+    &--left {
+      border-radius: 0 8px 0 0;
+    }
+    &--right {
+      border-radius: 8px 0 0 0;
+    }
+
+    &--center {
+      width: 76px;
+      background: rgba($color-white, 0);
+      transform: translateY(40px);
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        bottom: 38px;
+        left: 0;
+        z-index: -1;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        background-image: radial-gradient(
+          top,
+          circle closest-corner,
+          rgba(23, 6, 255, 0) 0,
+          rgba(16, 187, 101, 0) 98%,
+          white 100%,
+          white 100%
+        );
+      }
+
+      .event-btn-link {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background: $color-white;
+        border-radius: 50%;
+        bottom: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 -11px 25px rgba(#4b63ff, 0.16);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        color: $color-dodger-blue;
+        &:hover {
+          color: $color-radical-red;
+        }
+      }
+    }
+  }
+}
+
+.event-btn-link {
+  color: #b7b9c8;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  &:hover {
+    color: $color-radical-red;
+  }
+}

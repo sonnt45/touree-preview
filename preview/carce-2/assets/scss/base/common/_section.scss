@@ -1,0 +1,43 @@
+.section-gap-top-25{
+    margin-top: 25px;
+}
+.section-gap-top-30{
+    margin-top: 30px;
+}
+.section-gap-top-50{
+    margin-top: 50px;
+}
+.my-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.mt-115{
+    margin-top: 115px;
+}
+
+.title-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.section-content{
+    .title{
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 1.25;
+
+        span{
+            font-weight: 400;
+        }
+    }
+
+    p{
+        margin-top: 14px;
+    }
+}

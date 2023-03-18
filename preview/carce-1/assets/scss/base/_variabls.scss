@@ -1,0 +1,53 @@
+//=======================
+// Developer Variable
+//=======================
+// Font Family
+
+$roboto-font: 'Roboto', sans-serif;
+
+$font-body: $roboto-font;
+
+
+// Custom Color
+$color-body: #171717;
+$color-white: #fff;
+$color-black: #000;
+$color-white-smoke: #F7F7F7;
+$color-pink-swan: #B4B4B4;
+$color-grey-suit: #8E8E93;
+$color-radical-red: #FF375F;
+$color-red-orange: #FF453A;
+$color-sunset-orange: #FF5050;
+$color-emerald: #35E86A;
+$color-lime-green: #32D74B;
+$color-alice-blue: #F3F8FF;
+$color-maya-blue: #64D2FF;
+$color-summer-sky: #25AFD2;
+$color-dodger-blue: #007AFF;
+$color-gold: #FFD60A;
+$color-bold-red: #25100f;
+$color-neon-carrot: #FE9233;
+$color-blue-violet: #7230E0;
+$color-colonial-white: #E2CF9A;
+$color-solid-pink: #7F4C52;
+$color-roti: #BF9B42;
+$color-prelude: #C3B7CB;
+
+$color-primary: $color-white-smoke;
+$color-secondary: $color-radical-red;
+$color-tertiarie: $color-bold-red;
+
+
+
+
+// Font Size
+$font-size-body: 14px;
+$font-size-h1: 25px;
+$font-size-h2: 20px;
+$font-size-h3: 18px;
+$font-size-h4: 16px;
+$font-size-h5: 14px;
+$font-size-h6: 12px;
+
+// Transition
+$transition-base: all .3s ease;

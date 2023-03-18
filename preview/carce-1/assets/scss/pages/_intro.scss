@@ -1,0 +1,37 @@
+.intro-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: $color-alice-blue;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.intro-wrapper {
+  text-align: center;
+
+  .logo {
+    margin-bottom: 30px;
+    .image {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  .intro-bg {
+    margin-bottom: 30px;
+  }
+
+  .intro-text {
+    margin-bottom: 50px;
+  }
+}
+
+.btn--size-58-58 {
+  margin: 0 auto;
+}
