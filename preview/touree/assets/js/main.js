@@ -64,7 +64,7 @@ $(document).ready(function () {
 
     /** center button click toggle **/
     $('.centerbutton .nav-link').on('click', function () {
-        $(this).toggleClass('active')
+        // $(this).toggleClass('active')
     })
 
 });
