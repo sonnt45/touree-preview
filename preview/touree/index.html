@@ -11,7 +11,7 @@
 
     <!-- manifest meta -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="manifest.json">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/favicon180.png" sizes="180x180">
@@ -34,659 +34,647 @@
 </head>
 
 <body class="body-scroll" data-page="index">
-
-    <!-- loader section -->
-    <div class="container-fluid loader-wrap">
-        <div class="row h-100">
-            <div class="col-10 col-md-6 col-lg-5 col-xl-3 mx-auto text-center align-self-center">
-                <div class="loader-cube-wrap loader-cube-animate mx-auto">
-                    <img src="assets/img/logo.png" alt="Logo">
-                </div>
-                <p class="mt-4">Chuẩn bị đi chơi thôi<br><strong>Chờ chút...</strong></p>
+<!-- Loader -->
+<div class="container-fluid loader-wrap">
+    <div class="row h-100">
+        <div class="col-10 col-md-6 col-lg-5 col-xl-3 mx-auto text-center align-self-center">
+            <div class="loader-cube-wrap loader-cube-animate mx-auto">
+                <img src="assets/img/logo.png" alt="">
             </div>
+            <p class="mt-4">Chuẩn bị đi chơi thôi<br><strong>Chờ chút...</strong></p>
         </div>
     </div>
-    <!-- loader section ends -->
+</div>
+<!-- Loader -->
 
-    <!-- Sidebar main menu -->
-    <div class="sidebar-wrap  sidebar-pushcontent">
-        <!-- Add overlay or fullmenu instead overlay -->
-        <div class="closemenu text-muted">Close Menu</div>
-        <div class="sidebar dark-bg">
-            <!-- user information -->
-            <div class="row my-3">
-                <div class="col-12 ">
-                    <div class="card shadow-sm bg-opac text-white border-0">
+<!-- Left Sidebar -->
+<div class="sidebar-wrap sidebar-pushcontent">
+    <div class="closemenu text-muted">Close Menu</div>
+    <div class="sidebar dark-bg">
+        <!-- User Info -->
+        <div class="row my-3">
+            <div class="col-12 ">
+                <div class="card shadow-sm bg-opac text-white border-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <figure class="avatar avatar-44 rounded-15">
+                                    <img src="assets/img/user1.jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="col px-0 align-self-center">
+                                <p class="mb-1">Maxartkiller</p>
+                                <p class="text-muted size-12">Hà Nội</p>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-44 btn-light">
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-opac text-white border-0">
                         <div class="card-body">
                             <div class="row">
+                                <div class="col-12">
+                                    <h1 class="display-4">Cấp 4</h1>
+                                </div>
                                 <div class="col-auto">
-                                    <figure class="avatar avatar-44 rounded-15">
+                                    <p class="text-muted">Dân chơi Hà Thành</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- User Info -->
+        <!-- Navigation -->
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-house-door"></i></div>
+                            <div class="col">Dashboard</div>
+                            <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:;"
+                           role="button" aria-expanded="false">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-file-earmark-text"></i></div>
+                            <div class="col">Lối tắt</div>
+                            <div class="arrow"><i class="bi bi-plus plus"></i> <i class="bi bi-dash minus"></i>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item nav-link" href="index.html">
+                                    <div class="avatar avatar-40 rounded icon"><i class="bi bi-file-earmark-text"></i>
+                                    </div>
+                                    <div class="col">Trang chủ</div>
+                                    <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item nav-link" href="pages/splash.html">
+                                    <div class="avatar avatar-40 rounded icon"><i class="bi bi-file-earmark-text"></i>
+                                    </div>
+                                    <div class="col">Splash</div>
+                                    <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item nav-link" href="pages/landing.html">
+                                    <div class="avatar avatar-40 rounded icon"><i class="bi bi-file-earmark-text"></i>
+                                    </div>
+                                    <div class="col">Landing</div>
+                                    <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="auth-pages/signin.html" tabindex="-1">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-box-arrow-right"></i></div>
+                            <div class="col">Đăng xuất</div>
+                            <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Navigation -->
+    </div>
+</div>
+<!-- Left Sidebar -->
+
+<main class="h-100">
+    <!-- Header -->
+    <header class="header position-fixed">
+        <div class="row">
+            <div class="col-auto">
+                <a href="javascript:void(0)" target="_self" class="btn btn-light btn-44 menu-btn">
+                    <i class="bi bi-list"></i>
+                </a>
+            </div>
+            <div class="col align-self-center text-center">
+                <div class="logo-small">
+                    <img src="assets/img/logo.png" alt="">
+                    <h5>Touree</h5>
+                </div>
+            </div>
+            <div class="col-auto">
+                <a href="pages/notifications.html" target="_self" class="btn btn-light btn-44">
+                    <i class="bi bi-bell"></i>
+                    <span class="count-indicator"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+    <!-- Body -->
+    <div class="main-container container">
+        <!-- Welcome -->
+        <div class="row mb-4">
+            <div class="col-auto">
+                <div class="avatar avatar-50 shadow rounded-10">
+                    <img src="assets/img/user1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col align-self-center ps-0">
+                <h4 class="text-color-theme"><span class="fw-normal">Chào</span>, Maxartkiller</h4>
+                <p class="text-muted">Dân chơi Hà Thành</p>
+            </div>
+        </div>
+        <!-- Welcome -->
+        <!-- Flash Notification -->
+        <div class="row mb-4 hideonprogress">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-44 shadow-sm rounded-10">
+                                    <img src="assets/img/user3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col align-self-center ps-0">
+                                <p class="small mb-1">
+                                    <a href="demo-pages/profile.html" class="fw-medium">Shelvey</a>
+                                    <span class="text-muted">mời bạn tham gia chỉnh sửa lịch trình <b>Hẹn hò tháng 6</b></span>
+                                </p>
+                                <p style="font-size: .9rem">
+                                    <small class="text-muted">12 phút trước</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0">
+                        <div class="col-12">
+                            <div class="progress bg-none h-2 hideonprogressbar" data-target="hideonprogress">
+                                <div class="progress-bar bg-theme" role="progressbar" aria-valuenow="25"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Flash Notification -->
+        <!-- Challenges -->
+        <div class="row mb-3">
+            <div class="col">
+                <h6 class="title">Thử thách</h6>
+            </div>
+            <div class="col-auto"></div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="circle-small">
+                                    <div id="circleprogressone"></div>
+                                    <div class="avatar avatar-30 alert-primary text-primary rounded-circle">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto align-self-center ps-0">
+                                <p class="small mb-1 text-muted">Ngọt</p>
+                                <p>60<span class="small">%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="circle-small">
+                                    <div id="circleprogresstwo"></div>
+                                    <div class="avatar avatar-30 alert-success text-success rounded-circle">
+                                        <i class="bi bi-cup-straw"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto align-self-center ps-0">
+                                <p class="small mb-1 text-muted">Vua tràsữa</p>
+                                <p>85<span class="small">%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-40 alert-danger text-danger rounded-circle">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                            </div>
+                            <div class="col align-self-center ps-0">
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <p class="small text-muted mb-0">Khẩu vị độc đáo</p>
+                                        <p>Ăn tại nhà hàng bí ẩn</p>
+                                    </div>
+                                    <div class="col-auto text-end">
+                                        <p class="small text-muted mb-0">Còn 23 ngày</p>
+                                        <p class="small">16/32</p>
+                                    </div>
+                                </div>
+                                <div class="progress alert-danger h-4">
+                                    <div class="progress-bar bg-danger w-50" role="progressbar"
+                                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Challenges -->
+        <!-- Friends -->
+        <div class="row mb-3">
+            <div class="col">
+                <h6 class="title">Bạn bè</h6>
+            </div>
+            <div class="col-auto">
+                <a href="javascript:;" class="small">Xem tất cả</a>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 px-0">
+                <div class="swiper-container connectionwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="demo-pages/profile.html" class="card text-center">
+                                <div class="card-body">
+                                    <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
+                                        <img src="assets/img/user4.jpg" alt="">
+                                    </figure>
+                                    <p class="text-color-theme size-12 small">Nicolas</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="demo-pages/profile.html" class="card text-center">
+                                <div class="card-body">
+                                    <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
+                                        <img src="assets/img/user2.jpg" alt="">
+                                    </figure>
+                                    <p class="text-color-theme size-12 small">Shelvey</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="demo-pages/profile.html" class="card text-center">
+                                <div class="card-body">
+                                    <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
+                                        <img src="assets/img/user3.jpg" alt="">
+                                    </figure>
+                                    <p class="text-color-theme size-12 small">Amenda</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="demo-pages/profile.html" class="card text-center">
+                                <div class="card-body">
+                                    <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
                                         <img src="assets/img/user1.jpg" alt="">
                                     </figure>
+                                    <p class="text-color-theme size-12 small">RXL15</p>
                                 </div>
-                                <div class="col px-0 align-self-center">
-                                    <p class="mb-1">Maxartkiller</p>
-                                    <p class="text-muted size-12">Hà Nội</p>
-                                </div>
-                                <div class="col-auto">
-                                    <button class="btn btn-44 btn-light">
-                                        <i class="bi bi-arrow-right"></i>
-                                    </button>
-                                </div>
-                            </div>
+                            </a>
                         </div>
-                        <div class="card bg-opac text-white border-0">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h1 class="display-4">Cấp 4</h1>
-                                    </div>
-                                    <div class="col-auto">
-                                        <p class="text-muted">Dân chơi Hà Thành</p>
-                                    </div>
+                        <div class="swiper-slide">
+                            <a href="demo-pages/profile.html" class="card text-center">
+                                <div class="card-body">
+                                    <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
+                                        <img src="assets/img/user4.jpg" alt="">
+                                    </figure>
+                                    <p class="text-color-theme size-12 small">Nicolas</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- user emnu navigation -->
-            <div class="row">
-                <div class="col-12">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">
-                                <div class="avatar avatar-40 rounded icon"><i class="bi bi-house-door"></i></div>
-                                <div class="col">Dashboard</div>
-                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:;"
-                               role="button" aria-expanded="false">
-                                <div class="avatar avatar-40 rounded icon"><i class="bi bi-file-earmark-text"></i></div>
-                                <div class="col">Lối tắt</div>
-                                <div class="arrow"><i class="bi bi-plus plus"></i> <i class="bi bi-dash minus"></i>
+                        <div class="swiper-slide">
+                            <a href="demo-pages/profile.html" class="card text-center">
+                                <div class="card-body">
+                                    <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
+                                        <img src="assets/img/user2.jpg" alt="">
+                                    </figure>
+                                    <p class="text-color-theme size-12 small">Shelvey</p>
                                 </div>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item nav-link" href="index.html">
-                                        <div class="avatar avatar-40 rounded icon"><i class="bi bi-file-earmark-text"></i></div>
-                                        <div class="col">Trang chủ</div>
-                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item nav-link" href="pages/splash.html">
-                                        <div class="avatar avatar-40 rounded icon"><i class="bi bi-file-earmark-text"></i></div>
-                                        <div class="col">Splash</div>
-                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item nav-link" href="pages/landing.html">
-                                        <div class="avatar avatar-40 rounded icon"><i class="bi bi-file-earmark-text"></i></div>
-                                        <div class="col">Landing</div>
-                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="auth-pages/signin.html" tabindex="-1">
-                                <div class="avatar avatar-40 rounded icon"><i class="bi bi-box-arrow-right"></i></div>
-                                <div class="col">Đăng xuất</div>
-                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Sidebar main menu ends -->
-
-    <!-- Begin page -->
-    <main class="h-100">
-
-        <!-- Header -->
-        <header class="header position-fixed">
-            <div class="row">
-                <div class="col-auto">
-                    <a href="javascript:void(0)" target="_self" class="btn btn-light btn-44 menu-btn">
-                        <i class="bi bi-list"></i>
-                    </a>
-                </div>
-                <div class="col align-self-center text-center">
-                    <div class="logo-small">
-                        <img src="assets/img/logo.png" alt="">
-                        <h5>Touree</h5>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <a href="pages/notifications.html" target="_self" class="btn btn-light btn-44">
-                        <i class="bi bi-bell"></i>
-                        <span class="count-indicator"></span>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <!-- Header ends -->
-
-        <!-- main page content -->
-        <div class="main-container container">
-            <!-- welcome user -->
-            <div class="row mb-4">
-                <div class="col-auto">
-                    <div class="avatar avatar-50 shadow rounded-10">
-                        <img src="assets/img/user1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col align-self-center ps-0">
-                    <h4 class="text-color-theme"><span class="fw-normal">Chào</span>, Maxartkiller</h4>
-                    <p class="text-muted">Dân chơi Hà Thành</p>
-                </div>
-            </div>
-
-            <!-- money request received -->
-            <div class="row mb-4 hideonprogress">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="avatar avatar-44 shadow-sm rounded-10">
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="demo-pages/profile.html" class="card text-center">
+                                <div class="card-body">
+                                    <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
                                         <img src="assets/img/user3.jpg" alt="">
-                                    </div>
+                                    </figure>
+                                    <p class="text-color-theme size-12 small">Amenda</p>
                                 </div>
-                                <div class="col align-self-center ps-0">
-                                    <p class="small mb-1">
-                                        <a href="demo-pages/profile.html" class="fw-medium">Shelvey</a>
-                                        <span class="text-muted">mời bạn tham gia chỉnh sửa lịch trình <b>Hẹn hò tháng 6</b></span>
-                                    </p>
-                                    <p style="font-size: .9rem">
-                                        <small class="text-muted">12 phút trước</small>
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </div>
-                        <div class="row mx-0">
-                            <div class="col-12">
-                                <div class="progress bg-none h-2 hideonprogressbar" data-target="hideonprogress">
-                                    <div class="progress-bar bg-theme" role="progressbar" aria-valuenow="25"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="swiper-slide">
+                            <a href="demo-pages/profile.html" class="card text-center">
+                                <div class="card-body">
+                                    <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
+                                        <img src="assets/img/user1.jpg" alt="">
+                                    </figure>
+                                    <p class="text-color-theme size-12 small">RXL15</p>
                                 </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Friends -->
+        <!-- Offers Banner -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card theme-bg text-center">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col align-self-center">
+                                <h1>GIẢM 5%</h1>
+                                <p class="size-12 text-muted">cho mỗi giao dịch mua vé máy bay qua Touree</p>
+                                <div class="tag border-dashed border-opac">FLYWITHTOUREE</div>
+                            </div>
+                            <div class="col-6 align-self-center ps-0">
+                                <img src="assets/img/offergraphics.png" alt="" class="mw-100">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Saving targets -->
-            <div class="row mb-3">
-                <div class="col">
-                    <h6 class="title">Thử thách</h6>
-                </div>
-                <div class="col-auto">
-
-                </div>
+        </div>
+        <!-- Offers Banner -->
+        <!-- Suggested Itineraries -->
+        <div class="row mb-3">
+            <div class="col">
+                <h6 class="title">Lịch trình đề xuất</h6>
             </div>
-            <div class="row mb-4">
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="circle-small">
-                                        <div id="circleprogressone"></div>
-                                        <div class="avatar avatar-30 alert-primary text-primary rounded-circle">
-                                            <i class="bi bi-heart-fill"></i>
-                                        </div>
-                                    </div>
+            <div class="col-auto align-self-center">
+                <a href="javascript:;" class="small">Xem thêm</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="javascript:;" class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-60 shadow-sm rounded-10 coverimg">
+                                    <img src="assets/img/news.jpg" alt="">
                                 </div>
-                                <div class="col-auto align-self-center ps-0">
-                                    <p class="small mb-1 text-muted">Ngọt</p>
-                                    <p>60<span class="small">%</span></p>
-                                </div>
+                            </div>
+                            <div class="col align-self-center ps-0">
+                                <p class="text-color-theme mb-1">Vòng quanh thành phố</p>
+                                <p class="text-muted size-12">
+                                    Ghé thăm những địa điểm nổi tiếng trong thành phố xong rồi đi về
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="circle-small">
-                                        <div id="circleprogresstwo"></div>
-                                        <div class="avatar avatar-30 alert-success text-success rounded-circle">
-                                            <i class="bi bi-cup-straw"></i>
-                                        </div>
-                                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="javascript:;" class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-60 shadow-sm rounded-10 coverimg">
+                                    <img src="assets/img/news1.jpg" alt="">
                                 </div>
-                                <div class="col-auto align-self-center ps-0">
-                                    <p class="small mb-1 text-muted">Vua tràsữa</p>
-                                    <p>85<span class="small">%</span></p>
-                                </div>
+                            </div>
+                            <div class="col align-self-center ps-0">
+                                <p class="text-color-theme mb-1">Không làm gì</p>
+                                <p class="text-muted size-12">
+                                    Tụ tập ở công viên và không làm gì cả, ai bỏ về trước làm chó
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="avatar avatar-40 alert-danger text-danger rounded-circle">
-                                        <i class="bi bi-question-circle-fill"></i>
-                                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="javascript:;" class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-60 shadow-sm rounded-10 coverimg">
+                                    <img src="assets/img/news2.jpg" alt="">
                                 </div>
-                                <div class="col align-self-center ps-0">
-                                    <div class="row mb-2">
-                                        <div class="col">
-                                            <p class="small text-muted mb-0">Khẩu vị độc đáo</p>
-                                            <p>Ăn tại nhà hàng bí ẩn</p>
-                                        </div>
-                                        <div class="col-auto text-end">
-                                            <p class="small text-muted mb-0">Còn 23 ngày</p>
-                                            <p class="small">16/32</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="progress alert-danger h-4">
-                                        <div class="progress-bar bg-danger w-50" role="progressbar" aria-valuenow="25"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="col align-self-center ps-0">
+                                <p class="text-color-theme mb-1">Cuộc phiêu lưu vào lòng đất</p>
+                                <p class="text-muted size-12">
+                                    Lên đồ và hội ngộ cùng fan Navi, MU và anh em quý bửu ở lễ hội chill trong lòng đất
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
-
-            <!-- connection -->
-            <div class="row mb-3">
-                <div class="col">
-                    <h6 class="title">Bạn bè</h6>
-                </div>
-                <div class="col-auto">
-                    <a href="javascript:;" class="small">Xem tất cả</a>
-                </div>
+        </div>
+        <!-- Suggested Itineraries -->
+        <!-- Suggested Locations -->
+        <div class="row mb-3">
+            <div class="col">
+                <h6 class="title">Địa điểm đề xuất</h6>
             </div>
-            <div class="row mb-3">
-                <div class="col-12 px-0">
-                    <!-- swiper users connections -->
-                    <div class="swiper-container connectionwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="demo-pages/profile.html" class="card text-center">
-                                    <div class="card-body">
-                                        <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
-                                            <img src="assets/img/user4.jpg" alt="">
-                                        </figure>
-                                        <p class="text-color-theme size-12 small">Nicolas</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <a href="demo-pages/profile.html" class="card text-center">
-                                    <div class="card-body">
-                                        <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
-                                            <img src="assets/img/user2.jpg" alt="">
-                                        </figure>
-                                        <p class="text-color-theme size-12 small">Shelvey</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <a href="demo-pages/profile.html" class="card text-center">
-                                    <div class="card-body">
-                                        <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
-                                            <img src="assets/img/user3.jpg" alt="">
-                                        </figure>
-                                        <p class="text-color-theme size-12 small">Amenda</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <a href="demo-pages/profile.html" class="card text-center">
-                                    <div class="card-body">
-                                        <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
-                                            <img src="assets/img/user1.jpg" alt="">
-                                        </figure>
-                                        <p class="text-color-theme size-12 small">RXL15</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="demo-pages/profile.html" class="card text-center">
-                                    <div class="card-body">
-                                        <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
-                                            <img src="assets/img/user4.jpg" alt="">
-                                        </figure>
-                                        <p class="text-color-theme size-12 small">Nicolas</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <a href="demo-pages/profile.html" class="card text-center">
-                                    <div class="card-body">
-                                        <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
-                                            <img src="assets/img/user2.jpg" alt="">
-                                        </figure>
-                                        <p class="text-color-theme size-12 small">Shelvey</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <a href="demo-pages/profile.html" class="card text-center">
-                                    <div class="card-body">
-                                        <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
-                                            <img src="assets/img/user3.jpg" alt="">
-                                        </figure>
-                                        <p class="text-color-theme size-12 small">Amenda</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <a href="demo-pages/profile.html" class="card text-center">
-                                    <div class="card-body">
-                                        <figure class="avatar avatar-50 shadow-sm mb-1 rounded-10">
-                                            <img src="assets/img/user1.jpg" alt="">
-                                        </figure>
-                                        <p class="text-color-theme size-12 small">RXL15</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-auto align-self-center">
+                <a href="javascript:;" class="small">Xem thêm</a>
             </div>
-
-            <!-- offers banner -->
-            <div class="row mb-4">
-                <div class="col-12">
-                    <div class="card theme-bg text-center">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col align-self-center">
-                                    <h1>GIẢM 5%</h1>
-                                    <p class="size-12 text-muted">cho mỗi giao dịch mua vé máy bay qua Touree</p>
-                                    <div class="tag border-dashed border-opac">FLYWITHTOUREE</div>
-                                </div>
-                                <div class="col-6 align-self-center ps-0">
-                                    <img src="assets/img/offergraphics.png" alt="" class="mw-100">
+        </div>
+        <div class="row mb-4">
+            <div class="col-12 px-0">
+                <ul class="list-group list-group-flush bg-none">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-50 shadow rounded-10 ">
+                                    <img src="assets/img/company4.jpg" alt="">
                                 </div>
                             </div>
+                            <div class="col align-self-center ps-0">
+                                <p class="text-color-theme mb-0">Zomato</p>
+                                <p class="text-muted size-12">Nhà hàng</p>
+                            </div>
+                            <div class="col align-self-center text-end">
+                                <p class="mb-0">$$</p>
+                                <p class="text-muted size-12">12.3K ghé thăm</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-50 shadow rounded-10">
+                                    <img src="assets/img/company5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col align-self-center ps-0">
+                                <p class="text-color-theme mb-0">Bảo tàng Hà Nội</p>
+                                <p class="text-muted size-12">Bảo tàng</p>
+                            </div>
+                            <div class="col align-self-center text-end">
+                                <p class="mb-0">$</p>
+                                <p class="text-muted size-12">828 ghé thăm</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-50 shadow rounded-10">
+                                    <img src="assets/img/company1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col align-self-center ps-0">
+                                <p class="text-color-theme mb-0">Starbucks 23</p>
+                                <p class="text-muted size-12">Quán cà phê</p>
+                            </div>
+                            <div class="col align-self-center text-end">
+                                <p class="mb-0">$$$</p>
+                                <p class="text-muted size-12">14K ghé thăm</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-50 shadow rounded-10">
+                                    <img src="assets/img/company3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col align-self-center ps-0">
+                                <p class="text-color-theme mb-0">Walmart</p>
+                                <p class="text-muted size-12">Cửa hàng thời trang</p>
+                            </div>
+                            <div class="col align-self-center text-end">
+                                <p class="mb-0">$$</p>
+                                <p class="text-muted size-12">2.2K ghé thăm</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
+        </div>
+        <!-- Suggested Locations -->
+    </div>
+    <!-- Body -->
+</main>
 
-            <!-- Blogs -->
-            <div class="row mb-3">
-                <div class="col">
-                    <h6 class="title">Lịch trình đề xuất</h6>
-                </div>
-                <div class="col-auto align-self-center">
-                    <a href="javascript:;" class="small">Xem thêm</a>
-                </div>
-            </div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link active" href="javascript:;">
+                    <span>
+                        <i class="nav-icon bi bi-house"></i>
+                        <span class="nav-text">Trang chủ</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:;">
+                    <span>
+                        <i class="nav-icon bi bi-journal-richtext"></i>
+                        <span class="nav-text">Lịch trình</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item centerbutton">
+                <a class="nav-link" href="itinerary-pages/build-step-1.html">
+                    <span class="theme-radial-gradient">
+                        <i class="bi bi-plus-lg"></i>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chat-pages/chat.html">
+                    <span>
+                        <i class="nav-icon bi bi-chat-square-text"></i>
+                        <span class="nav-text">Tin nhắn</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:;">
+                    <span>
+                        <i class="nav-icon bi bi-person"></i>
+                        <span class="nav-text">Tài khoản</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<!-- Footer -->
+
+<!-- PWA Toast Message -->
+<div class="position-fixed bottom-0 start-50 translate-middle-x  z-index-10">
+    <div class="toast mb-3" role="alert" aria-live="assertive" aria-atomic="true" id="toastinstall"
+         data-bs-animation="true">
+        <div class="toast-header">
+            <img src="assets/img/favicon32.png" class="rounded me-2" alt="...">
+            <strong class="me-auto">Cài đặt Touree PWA</strong>
+            <small>ngay bây giờ</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <a href="javascript:;" class="card mb-3">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="avatar avatar-60 shadow-sm rounded-10 coverimg">
-                                        <img src="assets/img/news.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col align-self-center ps-0">
-                                    <p class="text-color-theme mb-1">Vòng quanh thành phố</p>
-                                    <p class="text-muted size-12">Ghé thăm những địa điểm nổi tiếng trong thành phố xong rồi đi về</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <a href="javascript:;" class="card mb-3">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="avatar avatar-60 shadow-sm rounded-10 coverimg">
-                                        <img src="assets/img/news1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col align-self-center ps-0">
-                                    <p class="text-color-theme mb-1">Không làm gì</p>
-                                    <p class="text-muted size-12">Tụ tập ở công viên và không làm gì cả, ai bỏ về trước làm chó</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <a href="javascript:;" class="card mb-3">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="avatar avatar-60 shadow-sm rounded-10 coverimg">
-                                        <img src="assets/img/news2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col align-self-center ps-0">
-                                    <p class="text-color-theme mb-1">Cuộc phiêu lưu vào lòng đất</p>
-                                    <p class="text-muted size-12">Lên đồ và hội ngộ cùng fan Navi, MU và anh em quý bửu ở lễ hội chill trong lòng đất</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Transactions -->
-            <div class="row mb-3">
                 <div class="col">
-                    <h6 class="title">Địa điểm đề xuất</h6>
+                    Nhấn "Cài đặt" để cài đặt Touree PWA và nâng cao trải nghiệm.
                 </div>
-                <div class="col-auto align-self-center">
-                    <a href="javascript:;" class="small">Xem thêm</a>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-12 px-0">
-                    <ul class="list-group list-group-flush bg-none">
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="avatar avatar-50 shadow rounded-10 ">
-                                        <img src="assets/img/company4.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col align-self-center ps-0">
-                                    <p class="text-color-theme mb-0">Zomato</p>                                   
-                                    <p class="text-muted size-12">Nhà hàng</p>
-                                </div>                                
-                                <div class="col align-self-center text-end">
-                                    <p class="mb-0">$$</p>
-                                    <p class="text-muted size-12">12.3K ghé thăm</p>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="avatar avatar-50 shadow rounded-10">
-                                        <img src="assets/img/company5.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="col align-self-center ps-0">
-                                    <p class="text-color-theme mb-0">Bảo tàng Hà Nội</p>
-                                    <p class="text-muted size-12">Bảo tàng</p>
-                                </div>                                
-                                <div class="col align-self-center text-end">
-                                    <p class="mb-0">$</p>
-                                    <p class="text-muted size-12">828 ghé thăm</p>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="avatar avatar-50 shadow rounded-10">
-                                        <img src="assets/img/company1.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="col align-self-center ps-0">
-                                    <p class="text-color-theme mb-0">Starbucks 23</p>
-                                    <p class="text-muted size-12">Quán cà phê</p>
-                                </div>                                
-                                <div class="col align-self-center text-end">
-                                    <p class="mb-0">$$$</p>
-                                    <p class="text-muted size-12">14K ghé thăm</p>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="avatar avatar-50 shadow rounded-10">
-                                        <img src="assets/img/company3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col align-self-center ps-0">
-                                    <p class="text-color-theme mb-0">Walmart</p>                                   
-                                    <p class="text-muted size-12">Cửa hàng thời trang</p>
-                                </div>                                
-                                <div class="col align-self-center text-end">
-                                    <p class="mb-0">$$</p>
-                                    <p class="text-muted size-12">2.2K ghé thăm</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- main page content ends -->
-
-
-    </main>
-    <!-- Page ends-->
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <ul class="nav nav-pills nav-justified">
-                <li class="nav-item">
-                    <a class="nav-link active" href="javascript:;">
-                        <span>
-                            <i class="nav-icon bi bi-house"></i>
-                            <span class="nav-text">Trang chủ</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:;">
-                        <span>
-                            <i class="nav-icon bi bi-journal-richtext"></i>
-                            <span class="nav-text">Lịch trình</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item centerbutton">
-                    <a class="nav-link" href="itinerary-pages/build-step-1.html">
-                        <span class="theme-radial-gradient">
-                            <i class="bi bi-plus-lg"></i>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="chat-pages/chat.html">
-                        <span>
-                            <i class="nav-icon bi bi-chat-square-text"></i>
-                            <span class="nav-text">Tin nhắn</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:;">
-                        <span>
-                            <i class="nav-icon bi bi-person"></i>
-                            <span class="nav-text">Tài khoản</span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-    <!-- Footer ends-->
-
-    <!-- PWA app install toast message -->
-    <div class="position-fixed bottom-0 start-50 translate-middle-x  z-index-10">
-        <div class="toast mb-3" role="alert" aria-live="assertive" aria-atomic="true" id="toastinstall"
-            data-bs-animation="true">
-            <div class="toast-header">
-                <img src="assets/img/favicon32.png" class="rounded me-2" alt="...">
-                <strong class="me-auto">Cài đặt Touree PWA</strong>
-                <small>ngay bây giờ</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-                <div class="row">
-                    <div class="col">
-                        Nhấn "Cài đặt" để cài đặt Touree PWA và nâng cao trải nghiệm.
-                    </div>
-                    <div class="col-auto align-self-center ps-0">
-                        <button class="btn-default btn btn-sm" id="addtohome">Cài đặt</button>
-                    </div>
+                <div class="col-auto align-self-center ps-0">
+                    <button class="btn-default btn btn-sm" id="addtohome">Cài đặt</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<!-- PWA Toast Message -->
 
-    <!-- Required jquery and libraries -->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<!-- Required jquery and libraries -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 
-    <!-- cookie js -->
-    <script src="assets/js/jquery.cookie.js"></script>
+<!-- cookie js -->
+<script src="assets/js/jquery.cookie.js"></script>
 
-    <!-- Customized jquery file  -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/color-scheme.js"></script>
+<!-- Customized jquery file  -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/color-scheme.js"></script>
 
-    <!-- PWA app service registration and works -->
-    <script src="assets/js/pwa-services.js"></script>
+<!-- PWA app service registration and works -->
+<script src="assets/js/pwa-services.js"></script>
 
-    <!-- Chart js script -->
-    <script src="assets/vendor/chart-js-3.3.1/chart.min.js"></script>
+<!-- Chart js script -->
+<script src="assets/vendor/chart-js-3.3.1/chart.min.js"></script>
 
-    <!-- Progress circle js script -->
-    <script src="assets/vendor/progressbar-js/progressbar.min.js"></script>
+<!-- Progress circle js script -->
+<script src="assets/vendor/progressbar-js/progressbar.min.js"></script>
 
-    <!-- swiper js script -->
-    <script src="assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+<!-- swiper js script -->
+<script src="assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
 
-    <!-- page level custom script -->
-    <script src="assets/js/app.js"></script>
+<!-- page level custom script -->
+<script src="assets/js/app.js"></script>
 
 </body>
 
