@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Touree</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/favicon180.png" sizes="180x180">
+    <link rel="icon" href="../assets/img/favicon32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../assets/img/favicon16.png" sizes="16x16" type="image/png">
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- style css for this template -->
+    <link href="../assets/css/style.css" rel="stylesheet" id="style">
+</head>
+
+<body class="body-scroll">
+<!-- Loader -->
+<div class="container-fluid loader-wrap">
+    <div class="row h-100">
+        <div class="col-10 col-md-6 col-lg-5 col-xl-3 mx-auto text-center align-self-center">
+            <div class="loader-cube-wrap loader-cube-animate mx-auto">
+                <img src="../assets/img/logo-vl.svg" alt=""/>
+            </div>
+            <p class="mt-4">Chuẩn bị đi chơi thôi<br><strong>Chờ chút...</strong></p>
+        </div>
+    </div>
+</div>
+<!-- Loader -->
+
+<main class="h-100 has-header">
+    <!-- Header -->
+    <header class="header position-fixed">
+        <div class="row">
+            <div class="col-auto">
+                <button class="btn btn-light btn-44 back-btn">
+                    <i class="bi bi-arrow-left"></i>
+                </button>
+            </div>
+            <div class="col align-self-center text-center">
+                <h5>Xây dựng lịch trình</h5>
+            </div>
+            <div class="col-auto">
+                <a href="../pages/notifications.html" target="_self" class="btn btn-light btn-44">
+                    <i class="bi bi-bell"></i>
+                    <span class="count-indicator"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+    <!-- Body -->
+    <div class="main-container container">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-4 mx-auto">
+                <form action="" method="post">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="expectedStartTime" name="expectedStartTime"
+                               placeholder="Thời gian khởi hành dự kiến" value="14:00:00 24/04/2023"/>
+                        <label for="expectedStartTime">Thời gian khởi hành dự kiến</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="expectedDuration" name="expectedDuration"
+                               placeholder="Tổng số giờ dự kiến" value="4"/>
+                        <label for="expectedDuration">Tổng số giờ dự kiến</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="expectedBudget" name="expectedBudget"
+                               placeholder="Ngân sách dự kiến" value="2000000"/>
+                        <label for="expectedBudget">Ngân sách dự kiến</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-control" id="expectedCapacity " name="expectedCapacity ">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <label for="expectedCapacity ">Số người dự kiến</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-control" id="expectedProvinceId" name="expectedProvinceId">
+                            <option selected></option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="3">Hải Dương</option>
+                        </select>
+                        <label for="expectedProvinceId">Thành phố/tỉnh dự kiến</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-control" id="expectedDistrictId" name="expectedDistrictId">
+                            <option selected></option>
+                            <option value="1">Ba Đình</option>
+                            <option value="2">Long Biên</option>
+                            <option value="3">Hoàn Kiếm</option>
+                        </select>
+                        <label for="expectedDistrictId">Quận/huyện dự kiến</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-control" id="expectedWardId" name="expectedWardId">
+                            <option selected></option>
+                            <option value="1">Ngọc Thuỵ</option>
+                            <option value="2">Phúc Đồng</option>
+                            <option value="3">Sài Đồng</option>
+                        </select>
+                        <label for="expectedWardId">Phường/xã dự kiến</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <h6>Loại địa điểm dự kiến</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                           id="expectedLocationCategoryId1" name="expectedLocationCategoryIds" checked>
+                                    <label class="form-check-label" for="expectedLocationCategoryId1">
+                                        Nhà hàng
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="2"
+                                           id="expectedLocationCategoryId2" name="expectedLocationCategoryIds" checked>
+                                    <label class="form-check-label" for="expectedLocationCategoryId2">
+                                        Rạp chiếu phim
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="3"
+                                           id="expectedLocationCategoryId3" name="expectedLocationCategoryIds" checked>
+                                    <label class="form-check-label" for="expectedLocationCategoryId3">
+                                        Công viên
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="4"
+                                           id="expectedLocationCategoryId4" name="expectedLocationCategoryIds" checked>
+                                    <label class="form-check-label" for="expectedLocationCategoryId4">
+                                        Bảo tàng
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="9"
+                                           id="expectedLocationCategoryId9" name="expectedLocationCategoryIds" checked>
+                                    <label class="form-check-label" for="expectedLocationCategoryId9">
+                                        Công viên
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="10"
+                                           id="expectedLocationCategoryId10" name="expectedLocationCategoryIds" checked>
+                                    <label class="form-check-label" for="expectedLocationCategoryId10">
+                                        Nhà nghỉ
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                           id="expectedLocationCategoryId5" name="expectedLocationCategoryIds" checked>
+                                    <label class="form-check-label" for="expectedLocationCategoryId5">
+                                        Quán cà phê
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="6"
+                                           id="expectedLocationCategoryId6" name="expectedLocationCategoryIds" checked>
+                                    <label class="form-check-label" for="expectedLocationCategoryId6">
+                                        TT thương mại
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                           id="expectedLocationCategoryId7" name="expectedLocationCategoryIds" checked>
+                                    <label class="form-check-label" for="expectedLocationCategoryId7">
+                                        Nhà hát
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="8"
+                                           id="expectedLocationCategoryId8" name="expectedLocationCategoryIds" checked>
+                                    <label class="form-check-label" for="expectedLocationCategoryId8">
+                                        Khu vui chơi
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="11"
+                                           id="expectedLocationCategoryId11" name="expectedLocationCategoryIds" checked>
+                                    <label class="form-check-label" for="expectedLocationCategoryId11">
+                                        Khách sạn
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Body -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" style="padding-left: 0; padding-right: 0">
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <a href="build-step-3.html" class="btn btn-lg shadow-sm w-100">
+                        Tự xây dựng
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="build-step-2.html" class="btn btn-default btn-lg shadow-sm w-100"
+                       style="border-top-left-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0">
+                        Nhận gợi ý
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer -->
+</main>
+
+<!-- Required jquery and libraries -->
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+<!-- cookie js -->
+<script src="../assets/js/jquery.cookie.js"></script>
+
+<!-- Customized jquery file  -->
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/color-scheme.js"></script>
+
+<!-- page level custom script -->
+<script src="../assets/js/app.js"></script>
+
+</body>
+
+</html>
