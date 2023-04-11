@@ -51,18 +51,18 @@
                     <p class="mb-0">Tuỳ chỉnh</p>
                     <div class="btn-close" id="settingCardClose"></div>
                 </div>
-                <div class="single-setting-panel">
+                <!--<div class="single-setting-panel">
                     <div class="form-check form-switch mb-2">
                         <input class="form-check-input" type="checkbox" id="availabilityStatus" checked>
                         <label class="form-check-label" for="availabilityStatus">Availability status</label>
                     </div>
-                </div>
-                <div class="single-setting-panel">
+                </div>-->
+                <!--<div class="single-setting-panel">
                     <div class="form-check form-switch mb-2">
                         <input class="form-check-input" type="checkbox" id="sendMeNotifications" checked>
                         <label class="form-check-label" for="sendMeNotifications">Send me notifications</label>
                     </div>
-                </div>
+                </div>-->
                 <div class="single-setting-panel">
                     <div class="form-check form-switch mb-2">
                         <input class="form-check-input" type="checkbox" id="darkSwitch">
@@ -110,31 +110,34 @@
                             <span>Touree</span> - Tự tay xây dựng lịch trình cho chuyến đi của bạn
                         </h2>
                         <ul class="demo-desc ps-0 mb-5">
-                            <li><i class="bi bi-check-lg"></i> Progressive web app</li>
-                            <li><i class="bi bi-check-lg"></i> Trí tuệ nhân tạo</li>
-                            <li><i class="bi bi-check-lg"></i> Dữ liệu lớn</li>
-                            <li><i class="bi bi-check-lg"></i> Điện toán đám mây</li>
+                            <li><i class="bi bi-check-lg"></i> Xây dựng lịch trình chi tiết</li>
+                            <li><i class="bi bi-check-lg"></i> Dễ dàng theo dõi lịch trình</li>
+                            <li><i class="bi bi-check-lg"></i> Thu thập mã giảm giá</li>
+                            <li><i class="bi bi-check-lg"></i> Tham gia thử thách để nhận quà</li>
+                            <li><i class="bi bi-check-lg"></i> Đánh giá địa điểm và chuyến đi</li>
+                            <li><i class="bi bi-check-lg"></i> Kết nối với cộng đồng</li>
                         </ul>
                         <div class="promotionVideo">
-                            <a class="btn btn-danger btn-lg rounded-pill" href="mock/home.html" target="_blank">
+                            <a class="demo-url btn btn-danger btn-lg rounded-pill" href="javascript:;" target="_blank">
                                 Mở trong tab mới
                             </a>
                         </div>
                     </div>
                     <div class="col-12 col-lg-5">
                         <div class="text-center">
-                            <iframe class="shadow-lg" src="mock/home.html"></iframe>
+                            <iframe class="demo-frame shadow-lg" src=""></iframe>
                         </div>
                     </div>
                     <div class="col-12 col-lg-3">
                         <div class="text-lg-end">
-                            <div class="live-preview-btn mb-3">
-                                <a class="btn btn-primary btn-lg d-lg-none mb-5 rounded-pill" href="hero-blocks.html" target="_blank">
-                                    Click the button to live preview
+                            <!--<div class="live-preview-btn mb-3">
+                                <a class="demo-url btn btn-primary btn-lg d-lg-none mb-5 rounded-pill"
+                                   href="javascript:;" target="_blank">
+                                    Nhấn để xem trong tab mới
                                 </a>
-                            </div>
+                            </div>-->
                             <div class="qr-code-wrapper shadow border">
-                                <img src="https://designing-world.com/affan-1.6.0/img/demo-img/qr-code.png" alt="">
+                                <div id="qrcode"></div>
                                 <h6 class="mb-0">Quét mã QR để xem trên<br>thiết bị di động.</h6>
                             </div>
                         </div>
@@ -143,20 +146,17 @@
             </div>
         </div>
 
-        <!-- TODO display -->
-        <div class="features-area" style="display: none">
+        <div class="features-area">
             <div class="container demo-container direction-rtl">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-7 col-xl-6">
                         <div class="section-heading text-center">
-                            <h2 class="display-6 mb-3">Key Features</h2>
+                            <h2 class="display-6 mb-3">Về dự án</h2>
                             <p class="mb-0">
-                                Affan is a modern and latest technology-based mobile template. It's come with
-                                <span class="special-text">
-                                    Creative Design, Vanilla JavaScript, Bootstrap 5, PWA Ready, Dark Mode &amp;
-                                    Right to Left (RTL)
-                                </span>
-                                features.
+                                Touree là một dự án start-up hướng tới những người trẻ có nhu cầu về chuyến đi ngắn hoặc
+                                trong ngày. Chúng tôi sử dụng công nghệ <span class="special-text">PWA, trí tuệ nhân
+                                tạo, dữ liệu lớn và điện toán đám mây</span> để mang lại trải nghiệm tốt nhất cho người
+                                dùng.
                             </p>
                         </div>
                     </div>
@@ -165,31 +165,71 @@
                     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                         <div class="card active">
                             <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/pwa.png" alt="">
-                                <h6 class="mb-0">PWA Ready</h6>
+                                <img class="mb-4" src="assets/images/tech-pwa.png" alt="">
+                                <h6 class="mb-0">Progressive Web App</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                         <div class="card active">
                             <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/bootstrap.png" alt="">
-                                <h6 class="mb-0">Bootstrap 5</h6>
+                                <img class="mb-4" src="assets/images/tech-ai.png" alt="">
+                                <h6 class="mb-0">Artificial Intelligence</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                         <div class="card active">
                             <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/js.png" alt="">
-                                <h6 class="mb-0">Vanilla JS</h6>
+                                <img class="mb-4" src="assets/images/tech-big-data.png" alt="">
+                                <h6 class="mb-0">Big Data</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                         <div class="card active">
                             <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/npm.png" alt="">
+                                <img class="mb-4" src="assets/images/tech-gcp.png" alt="">
+                                <h6 class="mb-0">Google Cloud</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                        <div class="card active">
+                            <div class="card-body text-center">
+                                <img class="mb-4" src="assets/images/tech-cloudflare.png" alt="">
+                                <h6 class="mb-0">Cloudflare</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                        <div class="card active">
+                            <div class="card-body text-center">
+                                <img class="mb-4" src="assets/images/tech-k8s.png" alt="">
+                                <h6 class="mb-0">Kubernetes</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                        <div class="card active">
+                            <div class="card-body text-center">
+                                <img class="mb-4" src="assets/images/tech-docker.png" alt="">
+                                <h6 class="mb-0">Docker</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                        <div class="card active">
+                            <div class="card-body text-center">
+                                <img class="mb-4" src="assets/images/tech-github.svg" alt="">
+                                <h6 class="mb-0">GitHub</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                        <div class="card active">
+                            <div class="card-body text-center">
+                                <img class="mb-4" src="assets/images/tech-npm.png" alt="">
                                 <h6 class="mb-0">npm</h6>
                             </div>
                         </div>
@@ -197,70 +237,62 @@
                     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                         <div class="card active">
                             <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/gulp.png" alt="">
-                                <h6 class="mb-0">Gulp 4</h6>
+                                <img class="mb-4" src="assets/images/tech-angularjs.svg" alt="">
+                                <h6 class="mb-0">AngularJS</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                         <div class="card active">
                             <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/sass.png" alt="">
-                                <h6 class="mb-0">SCSS</h6>
+                                <img class="mb-4" src="assets/images/tech-nestjs.svg" alt="">
+                                <h6 class="mb-0">NestJS</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                         <div class="card active">
                             <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/dark.png" alt="">
-                                <h6 class="mb-0">Dark Mode</h6>
+                                <img class="mb-4" src="assets/images/tech-flask.svg" alt="">
+                                <h6 class="mb-0">Flask</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                         <div class="card active">
                             <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/rtl.png" alt="">
-                                <h6 class="mb-0">RTL Mode</h6>
+                                <img class="mb-4" src="assets/images/tech-mongodb.png" alt="">
+                                <h6 class="mb-0">MongoDB</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                         <div class="card active">
                             <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/star.png" alt="">
-                                <h6 class="mb-0">Best Rated</h6>
+                                <img class="mb-4" src="assets/images/tech-mysql.svg" alt="">
+                                <h6 class="mb-0">MySQL</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                         <div class="card active">
                             <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/code.png" alt="">
-                                <h6 class="mb-0">Easy Code</h6>
+                                <img class="mb-4" src="assets/images/tech-redis.svg" alt="">
+                                <h6 class="mb-0">Redis</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                         <div class="card active">
                             <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/html5.png" alt="">
-                                <h6 class="mb-0">HTML5</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card active">
-                            <div class="card-body text-center">
-                                <img class="mb-4" src="https://designing-world.com/affan-1.6.0/img/demo-img/css.png" alt="">
-                                <h6 class="mb-0">CSS3</h6>
+                                <img class="mb-4" src="assets/images/tech-rabbitmq.png" alt="">
+                                <h6 class="mb-0">RabbitMQ</h6>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="w-100 d-block mb-5"></div>
-                <div class="row g-2 justify-content-center">
+                <!--<div class="row g-2 justify-content-center">
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card">
                             <div class="card-body p-1">
@@ -741,30 +773,33 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
 
         <div class="preview-footer-area py-4">
             <div class="container demo-container direction-rtl h-100 d-flex align-items-center justify-content-between">
                 <p class="mb-0">2023 &copy; Touree Team</p>
-                <!-- TODO display -->
-                <a class="btn btn-info" style="display: none"
-                   href="https://themeforest.net/item/affan-pwa-mobile-html-template/29715548" target="_blank">
-                    Purchase Now
+                <a class="mock-url btn btn-info" href="javascript:;" target="_blank">
+                    Mock version
                 </a>
             </div>
         </div>
     </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/slideToggle.min.js"></script>
     <script src="assets/js/internet-status.js"></script>
     <script src="assets/js/venobox.min.js"></script>
     <script src="assets/js/dark-rtl.js"></script>
     <script src="assets/js/active.js"></script>
     <script src="assets/js/pwa.js"></script>
+    <script src="assets/js/qrcode.min.js"></script>
     <script>
+        const demoPath = 'https://sonnt45.github.io/touree-preview/mock/home.html';
+        const mockPath = 'https://sonnt45.github.io/touree-preview/mock/home.html';
+
         if (document.querySelectorAll('.promotionVideo').length > 0) {
             window.addEventListener('load', function () {
                 new VenoBox({
@@ -776,6 +811,27 @@
                 });
             });
         }
+
+        let qrcode = new QRCode($('#qrcode')[0], {
+            text: demoPath,
+            // width: 128,
+            // height: 128,
+            // colorDark : "#000000",
+            // colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+
+        $('iframe.demo-frame').each(function () {
+            $(this).attr('src', demoPath);
+        });
+
+        $('a.demo-url').each(function () {
+            $(this).attr('href', demoPath);
+        });
+
+        $('a.mock-url').each(function () {
+            $(this).attr('href', mockPath);
+        });
     </script>
 </body>
 
