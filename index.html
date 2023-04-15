@@ -800,8 +800,8 @@
     <script src="assets/js/pwa.js"></script>
     <script src="assets/js/qrcode.min.js"></script>
     <script>
-        const demoPath = 'https://sonnt45.github.io/touree-preview/mock/home.html';
-        const mockPath = 'https://sonnt45.github.io/touree-preview/mock/home.html';
+        const demoUrl = 'mock/home.html';
+        const mockUrl = 'mock/home.html';
 
         if (document.querySelectorAll('.promotionVideo').length > 0) {
             window.addEventListener('load', function () {
@@ -816,7 +816,7 @@
         }
 
         let qrcode = new QRCode($('#qrcode')[0], {
-            text: demoPath,
+            text: demoUrl,
             // width: 128,
             // height: 128,
             // colorDark : "#000000",
@@ -825,15 +825,15 @@
         });
 
         $('iframe.demo-frame').each(function () {
-            $(this).attr('src', demoPath);
+            $(this).attr('src', demoUrl);
         });
 
         $('a.demo-url').each(function () {
-            $(this).attr('href', demoPath);
+            $(this).attr('href', demoUrl);
         });
 
         $('a.mock-url').each(function () {
-            $(this).attr('href', mockPath);
+            $(this).attr('href', mockUrl);
         });
     </script>
 </body>
