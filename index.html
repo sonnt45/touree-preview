@@ -800,7 +800,7 @@
     <script src="assets/js/pwa.js"></script>
     <script src="assets/js/qrcode.min.js"></script>
     <script>
-        const demoUrl = 'https://touree.sonnt.dev/mock/home.html';
+        const demoUrl = 'https://touree-vn.web.app/';
         const mockUrl = 'mock/home.html';
 
         if (document.querySelectorAll('.promotionVideo').length > 0) {
@@ -815,7 +815,7 @@
             });
         }
 
-        let qrcode = new QRCode($('#qrcode')[0], {
+        new QRCode($('#qrcode')[0], {
             text: demoUrl,
             // width: 128,
             // height: 128,
